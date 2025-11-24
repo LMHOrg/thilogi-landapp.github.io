@@ -1,0 +1,344 @@
+@use "./abstracts/mixins";
+@use "./abstracts/variables";
+
+/* ------------------------------ FOOTER CSS -------------------------- */
+.footer {
+  background-color: variables.$color-text-highlight;
+  padding-top: 2rem;
+}
+
+.footer .container-customize {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+.footer .footer-content {
+  padding-bottom: 30px;
+}
+
+.footer .logo_footer {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer .logo_footer img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.footer .company_name {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: "MyriadPro-Bold";
+}
+
+.footer .office-wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.footer .office-wrapper .office {
+  text-align: justify;
+}
+
+.footer .office-wrapper .office .title {
+  margin-bottom: 10px;
+  font-family: "MyriadPro-Bold";
+}
+
+.footer .office-wrapper .office .address {
+  max-width: 257px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.footer .office-wrapper .office .address p {
+  margin-bottom: 10px;
+}
+
+.footer .office-wrapper .office .address::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/v2/footer/icon-address.png");
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  // content: "\f3c5";
+  // color: #fff;
+  // font-family: "Font Awesome 5 Pro";
+  left: -5px;
+  right: 0;
+  font-weight: bold;
+}
+
+.footer .office-wrapper .office .phone {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.footer .office-wrapper .office .phone::before {
+  position: absolute;
+  // content: "\f879";
+  // color: #fff;
+  // font-family: "Font Awesome 5 Pro";
+  content: "";
+  background-image: url("../images/v2/footer/icon-phone.png");
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  left: -5px;
+  top: -2px;
+  right: 0;
+  font-weight: bold;
+}
+
+.footer .office-wrapper .office .phone a {
+  position: relative;
+  z-index: 2;
+}
+
+.footer .office-wrapper .office .global {
+  position: relative;
+  padding-left: 20px;
+}
+
+.footer .office-wrapper .office .global::before {
+  position: absolute;
+  content: "\f0ac";
+  color: #fff;
+  font-family: "Font Awesome 5 Pro";
+  left: 0;
+  right: 0;
+}
+
+.footer .office-wrapper .office .global a {
+  position: relative;
+  z-index: 2;
+}
+
+.footer .list-social {
+  text-align: center;
+  margin: 35px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .list-social ul {
+  margin-bottom: unset;
+  padding: 0;
+}
+
+.footer .list-social ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.footer .footer-bottom {
+  background-color: variables.$color-text-highlight;
+}
+
+.footer .footer-bottom .policy {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .footer-content .footer-bottom-mobile .policy {
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+}
+
+.footer .footer-bottom p,
+.footer .footer-bottom a {
+  padding: 13px 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  display: block;
+}
+
+.footer .footer-content .title-connect {
+  text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer .container-customize {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer .footer-content .logo_footer {
+    text-align: unset;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    width: max-content;
+  }
+
+  .footer .footer-content .logo_footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .footer-content .logo_footer img {
+    max-width: 200px;
+  }
+
+  .footer .footer-content {
+    padding-bottom: 0;
+  }
+
+  .footer .footer-content .company_name {
+    margin-bottom: 10px;
+  }
+
+  /* .footer .footer-content .office-wrapper {
+      display: unset;
+  } */
+
+  .footer .footer-content .office-wrapper .office {
+    position: relative;
+  }
+
+  .footer .footer-content .office-wrapper .office .title {
+    padding-top: 10px;
+  }
+
+  .footer .footer-content .office-wrapper .office .global {
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-content .office-wrapper .office .address {
+    max-width: unset;
+  }
+
+  .footer .footer-content .office-wrapper .office .address p {
+    color: #fff !important;
+  }
+
+  /* .footer .footer-content .office-wrapper .office::after {
+      content: "";
+      width: 100%;
+      height: 0.1px;
+      position: absolute;
+      background-color: #ccc;
+      opacity: 0.4;
+  } */
+
+  .footer .footer-content .title-connect {
+    display: block !important;
+  }
+
+  .footer .footer-content .title-connect h3 {
+    font-family: "MyriadPro-Bold";
+    color: #fff;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .footer .footer-content .list-social {
+    text-align: unset;
+    margin: 10px 0;
+  }
+
+  .footer .footer-content .list-social ul li {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer .footer-content .list-social ul li a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer .footer-content .list-social ul li a img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer .footer-content .footer-bottom-mobile .policy {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    column-gap: 30px;
+    justify-content: center;
+  }
+
+  .footer .footer-bottom .desktop {
+    display: none;
+  }
+
+  .footer .footer-bottom .copyright-mobile {
+    display: block !important;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .container-customize {
+    width: calc(100% - 30px);
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 600px) {
+  .footer .footer-content .logo_footer img {
+    width: 50%;
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer .footer-content .office-wrapper {
+    display: unset;
+  }
+
+  .footer .footer-content .office-wrapper .office {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 420px) {
+  .footer .footer-content .company_name h4 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 480px) {
+  .footer .footer-bottom .copyright-mobile {
+    font-size: 11px;
+  }
+}
+
+/* ------------------------------ END FOOTER CSS -------------------------- */
+
+.office,
+.policy {
+  @include mixins.maxWidth(1024) {
+    font-size: 15px;
+  }
+  @include mixins.maxWidth(767) {
+    font-size: 12px;
+  }
+}
+
+.logo_footer {
+  @include mixins.maxWidth(820) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}

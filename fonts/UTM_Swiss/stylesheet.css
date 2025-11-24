@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'UTM Swiss Condensed';
+    src: url('UTMSwissCondensed-Bold.eot');
+    src: url('UTMSwissCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('UTMSwissCondensed-Bold.woff2') format('woff2'),
+        url('UTMSwissCondensed-Bold.woff') format('woff'),
+        url('UTMSwissCondensed-Bold.ttf') format('truetype'),
+        url('UTMSwissCondensed-Bold.svg#UTMSwissCondensed-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UTM Swiss Condensed';
+    src: url('UTMSwissCondensed.eot');
+    src: url('UTMSwissCondensed.eot?#iefix') format('embedded-opentype'),
+        url('UTMSwissCondensed.woff2') format('woff2'),
+        url('UTMSwissCondensed.woff') format('woff'),
+        url('UTMSwissCondensed.ttf') format('truetype'),
+        url('UTMSwissCondensed.svg#UTMSwissCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UTM Swiss 721 Black Condensed';
+    src: url('UTMSwiss721BlackCondensed.eot');
+    src: url('UTMSwiss721BlackCondensed.eot?#iefix') format('embedded-opentype'),
+        url('UTMSwiss721BlackCondensed.woff2') format('woff2'),
+        url('UTMSwiss721BlackCondensed.woff') format('woff'),
+        url('UTMSwiss721BlackCondensed.ttf') format('truetype'),
+        url('UTMSwiss721BlackCondensed.svg#UTMSwiss721BlackCondensed') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

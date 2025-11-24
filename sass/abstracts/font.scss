@@ -1,0 +1,5 @@
+@use "./mixins";
+
+@include mixins.font-face(MyriadPro-Regular, "fonts/MyriadPro/MyriadPro-Regular");
+@include mixins.font-face(MyriadPro-Bold, "fonts/MyriadPro/MyriadPro-Bold");
+@include mixins.font-face(MyriadPro-Semibold, "fonts/MyriadPro/MyriadPro-Semibold");
